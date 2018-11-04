@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+ <!--  <servlet>
+  	<servlet-name>Marks</servlet-name>
+  	<servlet-class>com.firstServlet.MarksController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Marks</servlet-name>
+  	<url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>MarksDisplay</servlet-name>
+  	<servlet-class>com.firstServlet.ResultDisplayController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MarksDisplay</servlet-name>
+  	<url-pattern>/quality</url-pattern>
+  </servlet-mapping>
+   -->
+
+</web-app>
