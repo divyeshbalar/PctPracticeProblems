@@ -1,0 +1,147 @@
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Scanner;
+
+public class Problem1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N = 0;
+		boolean flag1 = true;
+		int op[];
+		
+		
+		
+		while(flag1)
+		{
+			try 
+			{
+				N = Integer.parseInt(sc.nextLine().trim());
+				flag1 = false;
+			} catch (NumberFormatException e) 
+			{
+				//System.out.println("Number format Exception");
+			}
+		}
+		//String after =  str.trim().replaceAll(" +", " ");
+		
+		
+		flag1 = true;
+		op = new int[N];
+		double ranges[][] = new double[N][2];
+		int i = 0;
+		
+		Scanner sc1 = new Scanner(System.in);
+		while(flag1)
+		{
+			while(i<N)
+			{
+				try {
+					ranges[i][0] = sc1.nextDouble();
+					ranges[i][1] = sc1.nextDouble();
+					i++;
+					if(i>=N)
+					{
+						flag1= false;
+						break;
+					}
+					flag1 = false;
+				} catch (NumberFormatException e) {
+					// TODO Auto-generated catch block
+					//System.out.println("Enter numbers only");
+					i = 0;
+				}
+			}
+		i = 0;
+		}
+		double rMax = 0;
+		for(i = 0;i < N;i++)
+		{
+			for(int j = 0; j<2; j++)
+			{
+				if(ranges[i][j]>rMax)
+				{
+					rMax = ranges[i][j];
+				}
+			}
+		}
+		
+		int count = 0;
+		
+		ArrayList<Double>[] primesOfRange = new ArrayList[N];
+		for (int d = 0; d < primesOfRange.length; d++) {
+			primesOfRange[d] = new ArrayList<>();
+		}
+		
+		
+			double len = rMax;
+			
+				for(i = 2; i<=; i++)
+				{
+					for(int j = 2; j < len; j++)
+					{
+						if(k == i*j || i%j == 0)
+						{
+							count++;
+						}
+						
+					}
+					if(count == 1)
+					{
+						primesOfRange[k].add((double)i);
+					}
+					count =0;
+					
+				}
+			
+		
+		
+		
+//		for(ArrayList<Double> x:primesOfRange)
+//		{
+//			for(double ij:x)
+//			{
+//				System.out.println(ij);
+//			}
+//			System.out.println("---------");
+//		}
+		
+		int counting[] = new int[N];
+//		int m = 0;
+//		for(ArrayList<Integer> x:primesOfRange)
+//		{
+//			for(int ij : x)
+//			{
+//				for(int lm:x)
+//				{
+//					if(ij*lm >= ranges[m][0] && ij*lm <= ranges[m][1])
+//					{
+//						counting[m]++;
+//					}
+//				}
+//			}
+//		}
+//		
+		
+		for(int a = 0; a<N;a++)
+		{
+			for(int b = 0; b<primesOfRange[a].size(); b++)
+			{
+				for(int c = b; c<primesOfRange[a].size(); c++)
+				{
+					if(primesOfRange[a].get(b)*primesOfRange[a].get(c) >=ranges[a][0] && primesOfRange[a].get(b)*primesOfRange[a].get(c) <= ranges[a][1] )
+					{
+						counting[a]++;
+					}
+				}
+			}
+		}
+		String sl = "";
+		for(int v = 0; v<counting.length;v++)
+		{
+			sl = sl + counting[v]+" ";
+		}
+		System.out.println(sl.trim());
+
+	}
+}

@@ -72,15 +72,7 @@ public class Lab5 {
 						
 					}
 					//after first window
-					
-					
-					String xx;
-					if(endIndx == strlen) {
-						window = str.substring(startIndx);	
-					}else
-					{
-						window = str.substring(startIndx, endIndx);
-					}
+					window = str.substring(startIndx, endIndx);
 					windowlen = window.length();
 					System.out.println(window+ " length = "+ windowlen+ startIndx);
 					count = 0;
@@ -152,15 +144,8 @@ public class Lab5 {
 			//outside inner loop
 			
 		}
-		String xx;
-		if(endIndx == strlen) {
-			xx = str.substring(startIndx);	
-		}else
-		{
-			xx = str.substring(startIndx, endIndx+1);
-		}
-		
-		if(windowlen < xx.length()) {
+		String xx = str.substring(startIndx, endIndx+1);
+		if(windowlen <= xx.length()) {
 			System.out.println("returning existing window having length= "+ windowlen);
 			return window;
 		}

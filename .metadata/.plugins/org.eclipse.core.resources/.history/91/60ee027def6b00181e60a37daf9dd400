@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Problem1 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int N;
+		try 
+		{
+			N = Integer.parseInt(sc.nextLine().trim());
+		} catch (NumberFormatException e) 
+		{
+			System.out.println("Number format Exception");
+		}
+		System.out.println(N);
+		//String after =  str.trim().replaceAll(" +", " ");
+
+	}
+
+}

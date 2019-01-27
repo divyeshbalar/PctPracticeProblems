@@ -1,0 +1,14 @@
+
+public class Model {
+
+	Scanner sc = new Scanner(System.in);
+	
+	public int sum, avg;
+
+	public Model(int sum, int avg) {
+		super();
+		this.sum = sum;
+		this.avg = avg;
+	}
+	
+}

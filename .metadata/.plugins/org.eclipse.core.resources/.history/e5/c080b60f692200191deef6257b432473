@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Model {
+
+	
+	public int sum, avg;
+
+	public Model(int sum, int avg) {
+		super();
+		this.sum = sum;
+		this.avg = avg;
+	}
+	
+	
+}

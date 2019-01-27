@@ -1,11 +1,8 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
-import java.util.stream.Collectors;
 
 public class CalScore {
 
@@ -60,6 +57,7 @@ public class CalScore {
 				}
 			}
 		}
+		
 		int finArrSize = finalArr.size();
 		
 		for(String g: allSubst.keySet()) 
@@ -83,7 +81,6 @@ public class CalScore {
 				//System.out.println(arr[i]+arr[j]+" = "+map.get(arr[i]+arr[j]));
 				if(finalArr.contains(arr[i]+arr[j])&&(map.get(arr[i]+arr[j])>(map.get(arr[i])+map.get(arr[j])))&&!lowpriority.contains(arr[i])&&!lowpriority.contains(arr[j])){
 					priority.add(arr[i]+arr[j]);
-					System.out.println("Adding combined string "+arr[i]+arr[j]+ " in priority");
 				}
 				else {
 					if(finalArr.contains(arr[i]+arr[j])) {
@@ -91,15 +88,10 @@ public class CalScore {
 					}
 					if(!priority.contains(arr[i])&&!lowpriority.contains(arr[i])) {
 						priority.add(arr[i]);
-						System.out.println("Adding in second if string "+arr[i]+ " in priority");
 					}
 //					if(!priority.contains(arr[j])&&!lowpriority.contains(arr[j])) {
 //						priority.add(arr[j]);
-//						System.out.println("Adding in third if string "+arr[j]+ " in priority");
 //					}
-				
-				
-				
 				}
 			}
 		}
@@ -108,21 +100,14 @@ public class CalScore {
 		
 		
 		for(String d: priority) {
-			System.out.println(d+" Priority");			
+			System.out.println(d+" Priority");
+			
 		}
 		
 		for(String d: lowpriority) {
 			System.out.println(d+" LowPriority");
 			priority.remove(d);
 		}
-		
-		
-		//sorting Map
-/*		Map<String, Integer> sorted = map.entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByValue())).collect(Collectors.toMap(e -> e.getKey(), e -> e.getValue(), (e1, e2) -> e2,LinkedHashMap::new));
-		for(String x: sorted.keySet()) {
-			System.out.println(x+"=>"+map.get(x));
-		}*/
-		
 		
 	}
 

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Lab2 {
@@ -36,6 +37,21 @@ public class Lab2 {
 		
 		try {
 			n = Integer.parseInt(sc.nextLine());
+			//System.out.println(n);
+//			switch (n) {
+//			case 1:
+//				uni = new int[26];
+//				break;
+//			case 2:
+//				bi = new int[26][26];
+//				break;
+//			case 3:
+//				tri = new int[26][26][26];
+//				break;
+//			default:
+//				System.out.println("tooo big for intialization");
+//				break;
+//			}
 		} catch (NumberFormatException e) {
 			System.out.println("Enter the number for N");
 		}
@@ -214,7 +230,11 @@ public class Lab2 {
 			System.out.print("Invalid Value of N");
 			break;
 		}
-				
+		
+		
+		
+		
+		
 	}
 
 }

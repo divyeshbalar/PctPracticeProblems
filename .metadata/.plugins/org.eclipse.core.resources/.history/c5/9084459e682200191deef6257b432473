@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class View {
+	Scanner sc = new Scanner(System.in);
+	
+	public static void displaySumAvg(int sum, int avg){
+		System.out.println("Sum = "+sum + " average = "+avg);
+	}
+	
+	public static void getData() {
+		
+	}
+}

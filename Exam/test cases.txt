@@ -1,0 +1,27 @@
+helloworld
+7
+he 5
+hello 9 
+llo 2
+lo 3
+wo 6
+wor 4
+world 8
+
+
+youonlyliveonce
+12
+y 3
+ou 3
+you 7
+on 3
+ly 3
+only 6
+li 3
+ve 3
+live 6
+on 3
+ce 3
+once 6
+
+y ou on ly li ve on ce

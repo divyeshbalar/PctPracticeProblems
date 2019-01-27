@@ -1,0 +1,32 @@
+/**
+ * 
+ */
+
+/**
+ * @author d_balar
+ *
+ */
+public class Controller {
+
+	/**
+	 * @param args
+	 */
+	
+	public static void main(String[] args) {
+		 Model numObj = new Model(0,0);
+		Controller.getSumAvg(numObj);
+
+	}
+	
+	private static void getSumAvg(Model num){
+
+        for (int i=1; i < 10; i++){
+            //Here the controller interfaces with 
+            //the model
+            num.sum = num.sum + i;
+            num.avg = num.sum/i;
+
+        }
+
+}
+}

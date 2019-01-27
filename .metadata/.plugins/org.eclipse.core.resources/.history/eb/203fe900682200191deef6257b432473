@@ -1,0 +1,6 @@
+
+public class View {
+	public void displaySumAvg(int sum, int avg){
+		System.out.println("Sum = "+sum + " average = "+avg);
+	}
+}

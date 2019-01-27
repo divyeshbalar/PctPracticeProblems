@@ -1,0 +1,6 @@
+Balanced Scorecard(BSC):
+BSC is a metric to measure the overall performance of business's or/and of sub-division of any business(Including Software quality). It is based on 4 basic perspectives: Finance, Customer, Internal Process, Growth. To accomplish each, we need strategy metric called KPI(Key Performance Indicator), which is actionable metric, that keeps your strategy on track and focus on operational improvement which enable you to manage, control and achieve the aspired overall business goal by achieving sub-goals. 
+In BSC, the goal is always to improve; to do so, the threshold will be set based on past historical data and will ask sensible and quantifiable questions to reach the predetermined threshold. The use of threshold in this metric is to identify the remoteness between reality and goal
+
+
+Tool : 

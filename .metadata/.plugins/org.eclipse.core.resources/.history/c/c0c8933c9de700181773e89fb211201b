@@ -1,0 +1,46 @@
+import java.util.Scanner;
+import java.util.TreeSet;
+
+public class Isogram {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		StringBuilder str = new StringBuilder(sc.nextLine());
+		TreeSet<Character> sett= new TreeSet<>();
+		
+		int len = str.length();
+		int[] cArr = new int[len];
+		boolean IsoFlag = true;
+		for(int i = 0; i < len; i++) {
+			sett.add(str.charAt(i));
+		}
+		for(char c: sett) {
+			System.out.print(c);
+			for(int i = 0; i < str.length();)
+		}
+		
+		System.out.println();
+		/*for(int i = 0; i < str.length(); i++) {
+			cArr[i]++;
+			for(int j = i+1; j < str.length(); j++) {
+				if(str.charAt(i) == str.charAt(j)) {
+					cArr[i]++;
+					str.replace(j, j+1, "");
+				}
+				else {
+					continue;
+				}
+			}
+			if(cArr[i] != 2) {
+				IsoFlag = false;
+			}
+		}*/
+		
+		for(int i = 0; i < str.length();i++) {
+			System.out.println(str.charAt(i)+" = "+cArr[i]);
+			System.out.println(IsoFlag);
+		}
+		
+	}
+
+}
